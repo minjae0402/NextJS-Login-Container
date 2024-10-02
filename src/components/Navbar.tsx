@@ -1,9 +1,9 @@
-'use client';
+'use client'; // 클라이언트 컴포넌트로 설정
 
 import { useSession, signIn, signOut } from 'next-auth/react';
 import Link from 'next/link';
 
-const Page = () => {
+const Navbar = () => {
   const { data: session } = useSession();
 
   return (
@@ -74,4 +74,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Navbar;
